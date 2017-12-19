@@ -124,7 +124,7 @@ def aperture_and_shutter_speed_bubble_chart():
             aperture.append(event['_id']['aperture'])
             shutter_speed.append(event['_id']['shutterSpeed'])
             size.append(event['value'])
-            text.append('Aperture: %s<br>Shutter Speed: %s<br>Size: %s' % (event['_id']['aperture'], event['_id']['shutterSpeed'], event['value']))
+            text.append('Aperture: %s<br>Shutter Speed: %s<br>Count: %s' % (event['_id']['aperture'], event['_id']['shutterSpeed'], event['value']))
 
         trace = Scatter(
             x=shutter_speed, 
@@ -161,6 +161,7 @@ def aperture_and_shutter_speed_bubble_chart():
 
 
 if __name__ == "__main__":
+    # TODO: only import pictures we have not yet seen before
     import_meta_data(next(iter(sys.argv[1:])))
 
     focal_lengths_pie_chart()
