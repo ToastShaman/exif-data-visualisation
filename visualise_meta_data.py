@@ -161,7 +161,7 @@ def aperture_and_shutter_speed_bubble_chart():
 
 
 if __name__ == "__main__":
-    # import_meta_data(next(iter(sys.argv[1:])))
+    import_meta_data(next(iter(sys.argv[1:])))
 
     focal_lengths_pie_chart()
     time_of_day_heatmap()
