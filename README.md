@@ -1,12 +1,14 @@
 # Exif data visualisation
 
-A Python script using exiftool, plotly and mongodb to visualise 
+A Python3 script using [exiftool](https://sno.phy.queensu.ca/~phil/exiftool/), 
+[plotly](https://plot.ly/python/) and [mongodb](https://www.mongodb.com/) to visualise 
 the exif meta data contained in your photographs.
 
 ## Setup
-Run `$ brew install exiftool` and `pip3 install -r requirements.txt`.
+Run `brew install exiftool` and `pip3 install -r requirements.txt`.
 
 We also need a running mongodb instance to store the extracted meta data. 
+
 You can use docker to run a mongodb database.
 
 ```
